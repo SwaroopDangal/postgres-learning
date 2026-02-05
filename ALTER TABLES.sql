@@ -1,0 +1,28 @@
+Alter TABLE person
+ADD COLUMN age INT default 30;
+
+SELECT * FROM person;
+
+ALTER TABLE person
+DROP COLUMN AGE;
+SELECT * FROM person;
+
+ALTER TABLE person
+RENAME COLUMN name TO fname;
+
+SELECT * FROM person;
+
+ALTER TABLE person
+ALTER COLUMN fname
+SET DATA TYPE VARCHAR(150);
+
+ALTER TABLE person
+ADD COLUMN
+	mob varchar(15) CHECK (LENGTH(mob)>=10);
+
+INSERT INTO PERSON (mob)
+VALUES(1234567899)
+
+
+
+
